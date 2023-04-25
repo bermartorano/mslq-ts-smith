@@ -8,7 +8,6 @@ const getAllOrders = async () => {
   + ' LEFT JOIN Trybesmith.products AS p'
   + ' ON o.id = p.order_id'
   + ' GROUP BY o.id;');
-  console.log('**********RESULTADO DA QUERY: ', allOrders);
   return allOrders;
 };
 

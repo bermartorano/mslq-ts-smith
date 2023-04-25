@@ -4,7 +4,7 @@ import auth from '../utils/auth';
 
 const postUser = async (user: User) => {
   const { insertId } = await usersModel.postUser(user);
-  const newToken = auth.createToken(JSON.stringify(insertId));
+  const newToken = auth.createToken({ username: user.username, id: insertId });
   return newToken;
 };
 

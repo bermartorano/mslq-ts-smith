@@ -12,3 +12,8 @@ export type User = {
   level: number,
   password: string,
 };
+
+export type UserToLogin = {
+  username: string,
+  password: string,
+};
