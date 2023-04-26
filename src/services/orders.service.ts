@@ -5,6 +5,12 @@ const getAllOrders = async () => {
   return allOrders;
 };
 
+const registerOrder = async (productsIds: number[], userId: number) => {
+  await ordersModel.registerOrder(productsIds, userId);
+  return { statusCode: 201, info: { userId, productsIds } };
+};
+
 export default {
   getAllOrders,
+  registerOrder,
 };

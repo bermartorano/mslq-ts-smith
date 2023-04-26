@@ -7,6 +7,18 @@ const createToken = (user: { id: number, username: string }) => {
   return token;
 };
 
+const decodeToken = (token: string): { username: string, id: number, iat: number } => {
+  const decodedToken = jwt.decode(token);
+  return decodedToken as { username: string, id: number, iat: number };
+};
+
+const verifyToken = (token:string) => {
+  const isTokenValid = jwt.verify(token, secretKey as string);
+  return isTokenValid;
+};
+
 export default {
   createToken,
+  decodeToken,
+  verifyToken,
 };
