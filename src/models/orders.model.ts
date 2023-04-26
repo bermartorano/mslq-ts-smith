@@ -16,8 +16,6 @@ const registerOrder = async (productsIds: number[], userId: number) => {
     'INSERT INTO Trybesmith.orders (user_id) VALUES (?);',
     [userId],
   );
-  // console.log('*********** RETORNO DO REGISTRO: ', orderRegistered);
-  // console.log('*********** Id: ', orderRegistered.insertId);
   const { insertId: orderId } = orderRegistered;
   const postingOrderIdInProducts = productsIds.map((productId) => {
     const query = connection.execute<ResultSetHeader>(

@@ -7,7 +7,7 @@ const tokenValidation = (req: Request, res: Response, next: NextFunction) => {
   try {
     auth.verifyToken(token);
   } catch (error) {
-    return res.status(401).json({ message: 'Invalid Token' });
+    return res.status(401).json({ message: 'Invalid token' });
   }
   next();
 };
