@@ -8,7 +8,6 @@ const userLogin = async (user: UserToLogin) => {
     'SELECT * FROM Trybesmith.users WHERE users.username = ? AND users.password = ?',
     [username, password],
   );
-  console.log('********** RESULTADO DA QUERY: ', registeredUser);
   return registeredUser;
 };
 
