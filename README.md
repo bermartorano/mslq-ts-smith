@@ -1,4 +1,4 @@
-# ⚒️ Smith API!
+# ⚒️ Smith API
 
 Desenvolvi uma aplicação back-end para o gerenciamento de um banco de dados de uma loja de itens medievais em um jogo de RPG! É possível fazer operações CRUD no banco que modela usuários, produtos e vendas. Feita de acordo com a arquitetura MSC!
 
