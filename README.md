@@ -12,7 +12,7 @@ Desenvolvi uma aplicação back-end para o gerenciamento de um banco de dados de
 ## Como executar a aplicação
 1. Clone o repositório.
 2. Na raiz do projeto, rode o comando `docker-compose up -d` para subir os serviços do banco de dados e da aplicação.
-3. Entre no container da aplicação com o comando `docker exec -it trybesmith bash` e instale as dependências usando `npm install`.
+3. Entre no container da aplicação com o comando `docker exec -it trybesmith bash`.
 4. Dentro do terminal do container da aplicação, crie e popule as tabelas do banco com o comando `npm run restore`.
 5. Dentro do terminal do container da aplicação, suba a aplicação com o comando `npm start`
 
