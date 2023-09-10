@@ -17,4 +17,4 @@ Desenvolvi uma aplicação back-end para o gerenciamento de um banco de dados de
 5. Dentro do terminal do container da aplicação, suba a aplicação com o comando `npm start`
 
 ## Detalhes dos requisitos
-![image](https://github.com/bermartorano/mslq-ts-smith/assets/110858573/852b17dc-f017-4568-8cb7-3f0482156739)
+![requisitos](https://github.com/bermartorano/mslq-ts-smith/assets/110858573/624b88b4-e8d5-4656-b50f-d55ead3f38bb)
